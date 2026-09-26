@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+}
+
+.area-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #456;
+  color: #fff;
+  padding: 0 30px;
+  height: 55px;
+}
+
+.area-header .logo {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.area-header nav {
+  display: flex;
+  gap: 6px;
+}
+
+.area-header nav a {
+  color: #aab4c4;
+  text-decoration: none;
+  font-size: 0.88rem;
+  padding: 6px 14px;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.area-header nav a:hover {
+  background: #2e3f54;
+  color: #fff;
+}
+
+.area-header nav a.active {
+  background: #4a90e2;
+  color: #fff;
+}
+
+.area-main {
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  gap: 20px;
+  padding: 30px;
+  align-content: start;
+}
+
+.projects h2,
+.info h2 {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #1e2a3a;
+}
+
+.info h2 {
+  margin-bottom: 10px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #fff;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  font-size: 1rem;
+  color: #1e2a3a;
+}
+
+.project-card p {
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.project-card a {
+  align-self: flex-start;
+  background: #4a90e2;
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.project-card a:hover {
+  background: #2479db;
+}
+
+.info {
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  align-self: start;
+}
+
+.info p {
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.info ul {
+  list-style: none;
+}
+
+.info ul li {
+  padding: 6px 0;
+  font-size: 0.88rem;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+
+.area-footer {
+  background: #1e2a3a;
+  color: #aab4c4;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.85rem;
+}
